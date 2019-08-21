@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    string bigNews("I saw Elvis in an UFO");
+    cout << bigNews << endl;
+    cout << "Size = " << bigNews.size() << endl;
+    cout << "Capacity = " << bigNews.capacity() << endl;
+    bigNews.insert(1, " Adding in first time ");
+    cout << bigNews << endl;
+
+    cout << "Size = " << bigNews.size() << endl;
+    cout << "Capacity = "
+         << bigNews.capacity() << endl;
+    // Make sure that there will be this much space
+    bigNews.reserve(500);
+    // Add this to the end of the string
+    bigNews.append("I've been working too hard.");
+    cout << bigNews << endl;
+    cout << "Size = " << bigNews.size() << endl;
+    cout << "Capacity = "
+         << bigNews.capacity() << endl;
+
+    return 0;
+}
