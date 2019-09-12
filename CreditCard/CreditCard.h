@@ -1,13 +1,14 @@
-#ifdef CREDIT_CARD_H
+
 #define CREDIT_CARD_H
 
 #include <string>
 #include <iostream>
 
+using namespace std;
+
 class CreditCard{
     public:
-        CreditCard(const std::string& no,       //constructor
-            const std::string nm, int lim, double bal=0);
+        CreditCard(const string& no,const string& nm, int lim, double bal=0);
         //Accessor
         std::string getNumber() const {return number;}
         std::string getName() const {return name;}
@@ -18,10 +19,9 @@ class CreditCard{
         void makePayment(double payment);
     private:
     std::string number;
-    str::string name;
+    std::string name;
     int limit;
     double balance;
 };
 
-std::ostream & operator<<(std:ostream& out, const CreditCard &c);
-#endif
+std::ostream & operator<<(ostream& out, const CreditCard &c);
