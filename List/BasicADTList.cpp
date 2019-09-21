@@ -12,5 +12,6 @@ int main()
     {
         cin >> x;
         //lstObject.insert(x, lstObject.size());
+        
     }
 }
