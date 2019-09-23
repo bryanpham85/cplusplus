@@ -11,6 +11,7 @@ int main()
     for (int i = 0; i < 10; i++)
     {
         cin >> x;
-        lstObject.insert(x, lstObject.size());
+        //lstObject.insert(x, lstObject.size());
+        
     }
 }
